@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { CircularProgress } from "@material-ui/core";
+import TrainingQuestion from "./components/TrainingQuestion";
+import ConfigurationBar from "./components/ConfigurationBar";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export class App extends React.Component {
+  state = {
+    allQuestions: [],
+    currentQuestion: {},
+    isLoaded: false,
+  };
+
+  async componentDidMount() {
+    const allQuestions = await fetch("data.json").then((resp) => resp.json());
+    this.setState({
+      allQuestions,
+      isLoaded: true,
+      currentQuestion: allQuestions[0],
+    });
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <header></header>
+        <ConfigurationBar />
+        {this.state.isLoaded ? (
+          <TrainingQuestion question={this.state.currentQuestion} />
+        ) : (
+          <CircularProgress />
+        )}
+      </div>
+    );
+  }
 }
 
 export default App;
