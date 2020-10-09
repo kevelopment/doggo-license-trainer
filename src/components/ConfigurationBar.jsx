@@ -11,13 +11,17 @@ class ConfigurationBar extends React.Component {
             Doggo-Trainer
           </Typography>
           <Typography variant="h6" className={classes.stepIndicator} noWrap>
-            Question 1 / 35
+            Question{" "}
+            {`${this.props.currentQuestionIndex + 1} / ${
+              this.props.maxNumberQuestions + 1
+            }`}
           </Typography>
         </Toolbar>
       </AppBar>
     );
   }
 }
+
 const styles = (theme) => ({
   title: {
     flexGrow: 1,

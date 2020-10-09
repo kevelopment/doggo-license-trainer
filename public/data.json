@@ -1,6 +1,116 @@
 [
   {
-    "question": "Warum ist die Banane krumm?",
+    "question": "Ab welchem Alter sollte man mit dem Welpen Übungen beginnen?",
+    "answers": [
+      "Das Alter ist egal. Wichtig ist, dass der Hund vorher ca. drei Wochen Zeit hatte sich bei seiner neuen Familie einzuleben.",
+      "Man kann sofort mit einfachen Übungen anfangen. Wichtig ist, dass er keine Angst hat und nicht zu aufgeregt ist.",
+      "Gehorsamstraining sollte man nicht vor sechs Monaten beginnen, denn ein Welpe ist noch unreif.",
+      "Die einzige Übung, die man mit einem Welpen machen sollte, ist das Training der Stubenreinheit. Für alles andere ist der Hund noch zu jung."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Sie gehen mit Ihrem Hund unangeleint spazieren und es kommt Ihnen eine Gruppe Kinder entgegengerannt. Was tun Sie?",
+    "answers": [
+      "Sie leinen Ihren Hund an",
+      "Wenn Ihr Hund Kinder nicht beißt, können Sie ihn laufen lassen.",
+      "Ihr Hund hat einen relativ guten Gehorsam. Sie können ihn laufen lassen.",
+      "Sie rufen den Kindern zu, dass diese stehenzubleiben haben, da sonst bei dem Hund ein Jagdverhalten auslösbar wäre."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Ihr Hund hat schon seit mehreren Tagen Durchfall und erbricht sich. Was tun Sie?",
+    "answers": [
+      "Sie konsultieren Ihren Tierarzt.",
+      "Erbrechen und Durchfall ist bei Hunden normal, wenn es nicht länger als einen Monat anhält.",
+      "Sie füttern Ihren Hund mit Trockenfutter, um den Durchfall zu stoppen.",
+      "Sie geben ihm eine Schmerztablette, da er sicher Magenschmerzen hat."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Man ertappt zwei Hunde beim Deckakt in der Phase des „Hängens“. Was kann man tun?",
+    "answers": [
+      "Man sollte den Rüden so schnell wie möglich von der Hündin wegreißen, wenn kein Nachwuchs erwünscht ist.",
+      "Sie locken Ihren Hund mit einem Leckerli, um den Deckakt sofort zu beenden.",
+      "Man sollte die Hunde schnellstmöglich mit kaltem Wasser übergießen, um den Deckakt zu unterbinden und eine Trächtigkeit zu verhindern.",
+      "Man muss die gesamte Dauer des Deckaktes, also auch die Zeit des „Hängens“ abwarten."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Was sollte man beachten, wenn man mit seiner läufigen Hündin spazieren geht?",
+    "answers": [
+      "Bei der ersten Läufigkeit kann noch nichts passieren, die Hündin kann dann noch nicht tragend werden.",
+      "Man sollte die Hündin während der gesamten Läufigkeit an der Leine führen.",
+      "Manche Hündinnen reagieren während der Läufigkeit Rüden gegenüber aggressiver als sonst.",
+      "Die Hündin setzt während der Läufigkeit oft keinen Harn ab. Man muss deshalb zum Tierarzt gehen."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Stimmt es, dass man älteren Hunden nichts mehr beibringen kann?",
+    "answers": [
+      "Ja, Hunde, die älter als ein Jahr sind, können nichts mehr lernen.",
+      "Ab einem Alter von ca. 5 Jahren kann ein Hund nichts Neues mehr lernen.",
+      "Nein, aber es ist einfacher, schon mit einem Welpen zu üben, denn dann gewöhnt sich der Hund nicht erst etwas Falsches an.",
+      "Nein, da ein Welpe noch gar nichts lernen kann, sollte man mit der Erziehung erst beginnen, wenn der Hund ein halbes Jahr alt ist."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Ihr Hund möchte mit Ihren neuen Schuhen spielen. Was tun Sie?",
+    "answers": [
+      "Sie bieten ihm als Alternative Ihre alten Schuhe an, denn die kann er ruhig kaputt machen.",
+      "Sie bieten ihm als Alternative ein Hundespielzeug an und räumen Ihre Schuhe weg.",
+      "Sie kaufen ihm auch ein Paar (billige) neue Schuhe zum Spielen.",
+      "Sie schimpfen ihn aus, nehmen ihm die Schuhe weg und schicken ihn streng auf seinen Platz."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Sollte ein Hund lernen, allein zu bleiben?",
+    "answers": [
+      "Nein, ein Hund muss das nicht lernen. Er sollte niemals allein gelassen werden.",
+      "Ja, denn manchmal muss der Hund allein gelassen werden.",
+      "Nein, Hunde schlafen sowieso, wenn sie allein sind.",
+      "Das lernt er sowieso, weil er ja im Zwinger gehalten wird."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Wie reagieren Sie, wenn Sie aus der Wohnung gehen und Ihren Hund Minuten später bellen oder heulen hören?",
+    "answers": [
+      "Ich gehe sofort zurück und bestrafe ihn, denn er muss leise sein, wenn ich nicht da bin.",
+      "Ich mache gar nichts, denn ich finde es gut, dass mein Hund wachsam ist und viel bellt.",
+      "Ich mache nichts, denn die Nachbarn müssen sich daran gewöhnen.",
+      "Ich suche professionellen Rat."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Ihr Hund bellt und winselt häufig während Ihrer Abwesenheit in der Wohnung. Die Nachbarn beschweren sich bei Ihnen. Wie reagieren Sie?",
+    "answers": [
+      "Wenn der Vermieter die Hundhaltung gestattet hat, brauchen Sie nichts zu tun.",
+      "Sie versuchen das Problem mit professionellem Verhaltenstraining zu lösen.",
+      "Sie bestrafen den Hund, wenn Sie das nächste Mal nach Hause kommen.",
+      "Sie binden dem Tier einen engen Maulkorb um, um schnell einen Erfolg zu erzielen. Am Wochenende nehmen Sie sich dann Zeit für Ihren Hund."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Ist es empfehlenswert, dass ein Welpe an professionell geleiteten Welpenspielstunden teilnimmt?",
+    "answers": [
+      "Ja, aber nur, wenn er allein im Wurf war und keine Gelegenheit hatte, andere Welpen kennen zu lernen.",
+      "Ja, Kontakte mit altersgleichen Hunden unter professioneller Aufsicht sind jederzeit zu empfehlen.",
+      "Nein, der Welpe hatte mit seinen Wurfgeschwistern ausreichend Kontakte.",
+      "Nein, wenn Sie ausreichend Zeit für ihn aufbringen können."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "dummy",
     "answers": ["a", "b", "c", "d"],
     "correctAnswer": 0
   }

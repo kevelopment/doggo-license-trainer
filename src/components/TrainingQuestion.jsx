@@ -2,85 +2,117 @@ import {
   Card,
   CardContent,
   CardHeader,
-  Checkbox,
   FormControlLabel,
   CardActions,
   Button,
-  FormGroup,
+  Snackbar,
+  RadioGroup,
+  FormControl,
+  Radio,
+  FormHelperText,
+  withStyles,
 } from "@material-ui/core";
 import React from "react";
 
-export default class TrainingQuestion extends React.Component {
+class TrainingQuestion extends React.Component {
   state = {
-    question: {},
-    isCorrect: false,
+    isWrongAnswer: false,
+    selectedAnswer: -1,
+    helperText: undefined,
   };
 
-  componentDidMount() {
-    const question = {};
-    this.props.question.answers.forEach((answer) => {
-      question[answer] = false;
-    });
-    this.setState({ question });
+  componentDidUpdate(prevProps) {
+    if (prevProps.question !== this.props.question) {
+      console.log("update");
+      this.setState({ selectedAnswer: -1 });
+    }
   }
 
   handleChange = (event) => {
-    const { question } = this.state;
-    question[event.target.name] = event.target.checked;
-    this.setState({ question, isCorrect: false });
+    this.setState({ selectedAnswer: +event.target.value });
   };
 
   checkIfCorrect = () => {
-    const answers = Object.values(this.state.question);
-    const isValidLength = answers.filter((v) => v).length === 1;
-    const isCorrectSelection = answers.some(
-      (v, index) => v === true && index === this.props.question.correctAnswer
-    );
-
-    if (isValidLength === false || isCorrectSelection === false) {
-      this.setState({ isCorrect: false });
-      return;
+    let helperText = undefined;
+    if (this.state.selectedAnswer === -1) {
+      helperText = "Please select an answer.";
+    } else if (
+      this.state.selectedAnswer !== this.props.question.correctAnswer
+    ) {
+      helperText = "Wrong answer :( please choose another option.";
     }
-    this.setState({ isCorrect: true });
+    this.setState({ helperText });
+
+    // if helper text was not set: correct answer, go to the next question
+    if (!helperText) {
+      this.props.onNext();
+    }
+  };
+
+  showPreviousQuestion = () => {
+    this.setState({ helperText: undefined });
+    this.props.onPrevious();
+  };
+
+  handleClose = () => {
+    this.setState({ helperText: undefined });
   };
 
   render() {
+    const { classes } = this.props;
     return (
-      <Card>
-        <CardHeader title={this.props.question.question}></CardHeader>
-        <CardContent>
-          <FormGroup>
-            {this.props.question.answers.map((answer, index) => (
-              <FormControlLabel
-                style={
-                  this.state.isCorrect &&
-                  index === this.props.question.correctAnswer
-                    ? { background: "#66FF99" }
-                    : {}
-                }
-                control={
-                  <Checkbox
-                    checked={this.state.question[index]}
-                    name={answer}
-                    onChange={this.handleChange}
-                  ></Checkbox>
-                }
-                label={answer}
-              />
-            ))}
-          </FormGroup>
-        </CardContent>
-        <CardActions>
-          <Button
-            style={{ marginLeft: "auto" }}
-            size="small"
-            color="primary"
-            onClick={this.checkIfCorrect}
-          >
-            Next
-          </Button>
-        </CardActions>
-      </Card>
+      <>
+        <Card>
+          <CardHeader
+            title={`${this.props.index + 1}. ${this.props.question.question}`}
+          ></CardHeader>
+          <CardContent>
+            <FormControl component="fieldset" className={classes.formControl}>
+              <RadioGroup
+                name="quiz-question"
+                value={this.state.selectedAnswer}
+                onChange={this.handleChange}
+              >
+                {this.props.question.answers.map((answer, index) => (
+                  <FormControlLabel
+                    value={index}
+                    control={<Radio />}
+                    label={answer}
+                    key={`answer-${index}`}
+                  />
+                ))}
+              </RadioGroup>
+            </FormControl>
+            <FormHelperText className={classes.formHelper}>
+              {this.state.helperText}
+            </FormHelperText>
+          </CardContent>
+          <CardActions>
+            <Button
+              className={classes.leftAlign}
+              color="primary"
+              onClick={this.showPreviousQuestion}
+              disabled={this.props.index === 0}
+            >
+              Previous
+            </Button>
+            <Button
+              className={classes.rightAlign}
+              color="primary"
+              onClick={this.checkIfCorrect}
+            >
+              Next
+            </Button>
+          </CardActions>
+        </Card>
+      </>
     );
   }
 }
+const styles = (theme) => ({
+  formControl: { padding: theme.spacing(2) },
+  formHelper: { textAlign: "center", color: theme.palette.error.main },
+  leftAlign: { marginRight: "auto" },
+  rightAlign: { marginLeft: "auto" },
+});
+export default withStyles(styles)(TrainingQuestion);
