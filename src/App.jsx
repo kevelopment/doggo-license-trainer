@@ -1,14 +1,16 @@
-import React from "react";
 import {
-  CircularProgress,
   Container,
   createMuiTheme,
   ThemeProvider,
   Toolbar,
 } from "@material-ui/core";
-import TrainingQuestion from "./components/TrainingQuestion";
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "./App.scss";
 import ConfigurationBar from "./components/ConfigurationBar";
-import "./App.css";
+import Exam from "./components/exam/Exam";
+import Home from "./components/Home";
+import Training from "./components/training/Training";
 
 const appTheme = createMuiTheme({
   palette: {
@@ -22,12 +24,20 @@ const appTheme = createMuiTheme({
   },
 });
 
+/**
+ * Defines the available app routes
+ */
+export const Routes = Object.freeze({
+  ROOT: "/",
+  TRAINING: "/training",
+  EXAM: "/exam",
+});
+
 export class App extends React.Component {
   state = {
     allQuestions: [],
     isLoaded: false,
     currentIndex: 0,
-    maxIndex: 0,
   };
 
   async componentDidMount() {
@@ -35,25 +45,12 @@ export class App extends React.Component {
     this.setState({
       allQuestions,
       isLoaded: true,
-      currentQuestion: allQuestions[0],
       maxIndex: allQuestions.length - 1,
     });
   }
 
-  incrementCurrentIndex = () => {
-    let { currentIndex } = this.state;
-    let nextIndex = ++currentIndex;
-    if (nextIndex > this.state.maxIndex) {
-      nextIndex = 0;
-    }
-
-    this.setState({ currentIndex: nextIndex });
-  };
-
-  decrementCurrentIndex = () => {
-    let { currentIndex } = this.state;
-    const previousIndex = Math.min(--currentIndex, 0);
-    this.setState({ currentIndex: previousIndex });
+  setCurrentIndex = (index) => {
+    this.setState({ currentIndex: index });
   };
 
   render() {
@@ -65,16 +62,20 @@ export class App extends React.Component {
         />
         <Toolbar />
         <Container>
-          {this.state.isLoaded ? (
-            <TrainingQuestion
-              question={this.state.allQuestions[this.state.currentIndex]}
-              onNext={this.incrementCurrentIndex}
-              onPrevious={this.decrementCurrentIndex}
-              index={this.state.currentIndex}
-            />
-          ) : (
-            <CircularProgress />
-          )}
+          <BrowserRouter>
+            <Switch>
+              <Route path={Routes.EXAM}>{<Exam />}</Route>
+              <Route path={Routes.TRAINING}>
+                <Training
+                  questions={this.state.allQuestions}
+                  setIndex={this.setCurrentIndex}
+                />
+              </Route>
+              <Route path={Routes.ROOT}>
+                <Home isLoaded={this.state.isLoaded} />
+              </Route>
+            </Switch>
+          </BrowserRouter>
         </Container>
       </ThemeProvider>
     );

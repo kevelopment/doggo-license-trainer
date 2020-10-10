@@ -9,6 +9,7 @@ import {
   FormHelperText,
   Radio,
   RadioGroup,
+  Slide,
   withStyles,
 } from "@material-ui/core";
 import React from "react";
@@ -18,11 +19,11 @@ class TrainingQuestion extends React.Component {
     isWrongAnswer: false,
     selectedAnswer: -1,
     helperText: undefined,
+    direction: "left",
   };
 
   componentDidUpdate(prevProps) {
     if (prevProps.question !== this.props.question) {
-      console.log("update");
       this.setState({ selectedAnswer: -1 });
     }
   }
@@ -40,7 +41,7 @@ class TrainingQuestion extends React.Component {
     ) {
       helperText = "Wrong answer :( please choose another option.";
     }
-    this.setState({ helperText });
+    this.setState({ helperText, direction: "right" });
 
     // if helper text was not set: correct answer, go to the next question
     if (!helperText) {
@@ -49,7 +50,7 @@ class TrainingQuestion extends React.Component {
   };
 
   showPreviousQuestion = () => {
-    this.setState({ helperText: undefined });
+    this.setState({ helperText: undefined, direction: "left" });
     this.props.onPrevious();
   };
 
@@ -59,8 +60,17 @@ class TrainingQuestion extends React.Component {
 
   render() {
     const { classes } = this.props;
+    if (this.props.hidden) {
+      return <></>;
+    }
+
     return (
-      <>
+      <Slide
+        in={this.props.hidden === false}
+        direction={this.state.direction}
+        mountOnEnter
+        unmountOnExit
+      >
         <Card>
           <CardHeader
             title={`${this.props.index + 1}. ${this.props.question.question}`}
@@ -104,7 +114,7 @@ class TrainingQuestion extends React.Component {
             </Button>
           </CardActions>
         </Card>
-      </>
+      </Slide>
     );
   }
 }

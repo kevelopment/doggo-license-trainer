@@ -1,0 +1,12 @@
+html,
+body,
+#root {
+  height: 100%;
+  background: #eee;
+}
+
+.no-selection {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
