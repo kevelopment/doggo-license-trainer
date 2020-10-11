@@ -110,6 +110,376 @@
     "correctAnswer": 1
   },
   {
+    "question": "Welche Verhaltensweisen des Besitzers können bei einem Hund aggressives Verhalten auslösen?",
+    "answers": [
+      "Er ruft den Hund zurück, der gerade zu einem Spielkumpel rennen möchte.",
+      "Er belohnt das sofortige Kommen mit einem Leckerchen.",
+      "Er ignoriert den Hund, wenn dieser mit einem Ball ankommt und spielen möchte.",
+      "Er putzt dem Hund die Pfoten ab."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Was sind häufige Ursachen für die Entstehung eines Angstproblems?",
+    "answers": [
+      "Schlechte Erfahrungen, besonders, wenn sie in der Welpenzeit stattgefunden haben.",
+      "Eine stabile Bindung zwischen Hund und Besitzer.",
+      "Ein Leben in einer Familie mit 2 Kindern.",
+      "Regelmäßiges Training in einer guten Hundeschule mit dem Ziel des Ablegens des Hundeführerscheines."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Was passiert, wenn man versucht, einen Hund, der gerade Angst hat, mit Worten und durch Streicheln zu beruhigen?",
+    "answers": [
+      "Der Hund wird sich beruhigen und seine Angst verlieren.",
+      "Der Hund wird darin bestätigt, dass es richtig ist, Angst zu haben.",
+      "Der Hund wird von dem Moment an perfekt gehorchen, weil er sich so verstanden fühlt.",
+      "Der Hund könnte aggressiv reagieren."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Ist es ratsam, wenn man einen Hund übernimmt, mit dem Hund zum Tierarzt gehen, auch wenn der Hund einen gesunden Eindruck macht?",
+    "answers": [
+      "Ja, z. B. damit der Tierarzt anhand des Impfpasses überprüfen kann, ob der Hund ausreichend geimpft ist.",
+      "Ja, denn der Hund braucht eine Futterumstellung und dafür ist eine fachmännische Beratung notwendig.",
+      "Nein, das ist nicht notwendig, wenn man den Hund bei einem Züchter kauft.",
+      "Nein, das ist viel zu viel Stress für das Tier."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Was ist wichtig bei der Trinkwasserversorgung des Hundes?",
+    "answers": [
+      "Wasser sollte in ausreichender Menge jederzeit zur Verfügung stehen.",
+      "Es empfiehlt sich zur Vorbeugung von Infektionen das Trinkwasser abzukochen.",
+      "Wenn Hunde zu dünn sind, sollten sie mindestens drei Mal wöchentlich Milch bekommen.",
+      "Zur Verhütung von Diabetes und Nierenerkrankungen darf Wasser nur zu den Fütterungszeiten und nur in begrenzter Menge angeboten werden."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Was ist bei der Fütterung meines Hundes zu beachten?",
+    "answers": [
+      "Empfehlenswert ist der Einsatz von altersgerechten Fertigfuttermitteln.",
+      "Der Hund sollte immer aus seinem eigenen Napf gefüttert werden.",
+      "Besonders junge Hunde größerer Rassen sollten sich jederzeit satt fressen können.",
+      "Hunde sollten überwiegend mit Frischfleisch ernährt werden."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Unter welchen Umständen sollte man davon absehen, sich einen Hund anzuschaffen?",
+    "answers": [
+      "Bei Berufstätigkeit, wenn der Hund drei Stunden täglich allein sein müsste.",
+      "Wenn absehbar ist, dass sich Berufs- oder Lebenssituation ändern werden und nicht sicher ist, ob Hundehaltung dann noch möglich ist.",
+      "Wenn man keinen Garten hat.",
+      "Wenn man kein Auto hat.    "
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Sie haben bereits eine Katze und wollen sich einen Hund dazu kaufen. Wird das funktionieren?",
+    "answers": [
+      "Nein, denn Hund und Katze verstehen sich grundsätzlich nicht.",
+      "Wenn Sie einen gut sozialisierten Hundewelpen kaufen, der auch schon Katzen kennengelernt hat, haben Sie gute Chancen auf ein harmonisches Zusammenleben.",
+      "Wenn die Katze die Erste im Haushalt ist, wird sie sich immer durchsetzen. Sie können bedenkenlos auch einen älteren Hund kaufen.",
+      "Das funktioniert nur, wenn die Katze schon sehr alt ist und sich nicht mehr so gut zur Wehr setzen kann."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Ihr Kind geht mit Ihrem Hund spazieren. Im Park beschädigt der Hund Spielzeug anderer Kinder. Wer ist für den Schaden verantwortlich?",
+    "answers": [
+      "Sie sind sowohl für das Handeln Ihres Kindes als auch für den durch Ihren Hund verursachten Schaden verantwortlich.",
+      "Das Kind muss für den Schaden zur Verantwortung gezogen werden, schließlich hat es nicht gut aufgepasst.",
+      "Die anderen Kinder, die ihr Spielzeug einfach liegen lassen, sind für den Schaden verantwortlich.",
+      "Verantwortlich ist natürlich der Hund, denn er hat den Schaden verursacht."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Ist es in Deutschland erlaubt, Hunde einzuschläfern?",
+    "answers": [
+      "Nein, das ist in jedem Fall illegal.",
+      "Ja, aber nur wenn erhebliche Leiden und Schmerzen zu vermuten sind und keine Möglichkeit der Behandlung besteht.",
+      "Ja, da Tiere als Sachwerte zählen, ist das ohne Einschränkung möglich.",
+      "Ja, wenn der Besitzer das Tier nicht mehr halten kann, zum Beispiel wegen eines Umzugs oder einer Allergie und die Tötung tierschutzgerecht erfolgt."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Muss der „Sachkundenachweis“ beim Führen eines Hundes mitgeführt werden?",
+    "answers": [
+      "Ja, ein Nachweis muss beim Führen des Hundes in der Öffentlichkeit mitgeführt werden.",
+      "Auf der Steuermarke wird die Sachkunde des Halters vermerkt, diese muss vom Hund getragen werden.",
+      "Die bestandene Sachkunde wird im Mikrochip des Hundes abgespeichert.",
+      "Die Sachkundebescheinigung muss nicht mitgeführt werden."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Darf man seinen Hund neben dem PKW herlaufen lassen?",
+    "answers": [
+      "Nein, das ist laut Tierschutzgesetz verboten.",
+      "Nein, das ist laut Straßenverkehrsordnung verboten.",
+      "Ja, wenn der Hund langsam daran gewöhnt wird.",
+      "Ja, aber nur auf Feldwegen."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Welche Haltungsform ist laut Tierschutz-Hundeverordnung erlaubt?",
+    "answers": [
+      "Die Haltung eines Hundes im Keller ohne Tageslicht.",
+      "Die Haltung eines Hundes ohne Kontakt zu Sozialpartnern.",
+      "Die Haltung eines Hundes im Zwinger in Anbindung.",
+      "Zwingerhaltung, wenn eine Schutzhütte vorhanden ist und der Hund u. a. täglich Sozialkontakt bekommt."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Darf ich meinen Hund im Auto zurücklassen?",
+    "answers": [
+      "Ja, grundsätzlich darf ich das immer.",
+      "Ja, für kurze Zeit, wenn es nicht zu warm oder zu kalt ist.",
+      "Ja, aber dann nur im Kofferraum.",
+      "Grundsätzlich darf ich das gar nicht."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Ist es ratsam, einen Rassehund zu kaufen oder lieber einen Mischling?",
+    "answers": [
+      "Lieber einen Rassehund, sie sind edler und wertvoller.",
+      "Lieber ein Mischlingstier, diese sind gelehriger.",
+      "Man sollte den Hund kaufen, der am besten zur Person passt, egal ob Rasse- oder Mischlingstier.",
+      "Lieber ein Mischlingstier, aber nur wenn beide Elternteile des Hundes reinrassig sind."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Gibt es besonders aggressive Hunderassen?",
+    "answers": [
+      "Große Hunderassen sind aggressiver als kleine Rassen.",
+      "Rassehunde sind nicht aggressiv, das sind nur Mischlinge.",
+      "Jagdhunde oder Staffordshire Bullterrier.",
+      "Es gibt innerhalb jeder Rasse mehr oder weniger aggressive Hunde."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Kann in der freien Landschaft auch außerhalb der Brut- und Setzzeit eine Leinenpflicht gelten?",
+    "answers": [
+      "Nein, in Niedersachsen gilt die Leinenpflicht nur vom 1. April bis zum 15. Juli.",
+      "Ja, eine Leinenpflicht kann von den Feld- und Forstordnungsbehörden festgelegt werden.",
+      "Ja, eine Leinenpflicht kann vom Landrat festgelegt werden.",
+      "Nein, die Leinenpflicht gilt in Deutschland nur in der Brut- und Setzzeit."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Ich beuge mich über einen Hund und möchte ihn streicheln. Er duckt sich und knurrt. Ich mache mich klein und strecke ihm meine Hand entgegen, damit er daran schnüffeln kann. In diesem Moment schnappt er nach mir. Was könnte der Grund dafür sein?",
+    "answers": [
+      "Ein Hund, der so reagiert, muss früher geschlagen worden sein.",
+      "Der Hund hat die Geste des Handausstreckens als Bedrohung empfunden.",
+      "Der Hund ist grundsätzlich verhaltensgestört.",
+      "Es ist normal, dass Hunde Gegner attackieren, die schwächer sind. Dadurch, dass man sich klein gemacht hat, hat man dem Hund signalisiert, dass man schwächer ist als er."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Sollte man seinen Hund unbeaufsichtigt mit Kindern spielen lassen?",
+    "answers": [
+      "Ja, wenn der Hund und das Kind zusammen leben, ist das kein Problem, weil der Hund seine eigenen Rudelmitglieder nie beißen bzw. verletzen würde.",
+      "Wenn der Hund die Kinder kennt und mag, ist das kein Problem.",
+      "Nein, denn es kann immer kritische Situationen geben. Eine gute Aufsicht bei Kontakten zwischen Kindern und Hunden ist notwendig.",
+      "Nur, wenn es ein kleiner Hund ist, der den Kindern nichts tun kann."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Ihr Hund begegnet freilaufend einem anderen freilaufenden Hund, der seinen Schwanz einklemmt und Blickkontakt zu Ihrem Hund vermeidet. Welche der Aussagen trifft auf dieses Verhalten zu?",
+    "answers": [
+      "Der andere Hund zeigt sich Ihrem Hund gegenüber unterwürfig.",
+      "Ihr Hund hat den anderen Hund gerade zum Spiel aufgefordert.",
+      "Ihr Hund ist sehr dominant.",
+      "Es hat keine Bedeutung."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Ist es ein Zeichen von Aggression, wenn ein Hund auf dem Spaziergang zu einer fremden Person hinrennt und diese unvermittelt anspringt?",
+    "answers": [
+      "Nicht unbedingt, aber es ist ein Verhalten, das man dem Hund frühzeitig abgewöhnen sollte, da es Leute gibt, die Angst vor Hunden haben.",
+      "Ja, Anspringen ist ein aggressives Verhalten.",
+      "Nein, das Anspringen ist als Spielaufforderung zu verstehen.",
+      "Nein, es ist ein Zeichen großer Zuneigung."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Körpersprache spielt bei der Kommunikation der Hunde eine entscheidende Rolle, welche charakteristische Körperhaltung zeigt die Spielhaltung an?",
+    "answers": [
+      "Hochgezogene Lefzen, Zähne zeigen, angespannte Muskulatur.",
+      "Eingeknickte Vordergliedmaßen, Hinterbeine aufrecht, wedelnde Rute.",
+      "Steil aufgestellte Rute, gesträubte Rücken- und Nackenhaare.",
+      "Auf dem Rücken liegen, Blickkontakt meiden."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Nennen Sie typische Signale, an denen man ängstlich-unterwürfiges Verhalten erkennen kann.",
+    "answers": [
+      "Blickkontakt halten.",
+      "Sich klein machen und ducken.",
+      "Ohren aufstellen und wedeln.",
+      "Zum Spielen auffordern."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Sie haben Ihren neuen Welpen abgeholt. Er ist gerade 9 Wochen alt. Worauf sollten Sie in den nächsten Wochen besonders achten?",
+    "answers": [
+      "Der Welpe braucht jetzt ausschließlich Ruhe und Liebe.",
+      "Es ist sehr wichtig, dass der Hund in der nächsten Zeit viele Erfahrungen sammelt. Deshalb werde ich viel mit dem Hund unternehmen und auch eine Welpenspielgruppe besuchen.",
+      "Der Welpe ist noch viel zu klein, um etwas mit ihm zu unternehmen. Er ist noch nicht in der Lage, seine Umwelt richtig wahrzunehmen. Erst mit 4 Monaten sind seine Sinnesorgane vollständig entwickelt.",
+      "Der Welpe sollte bis zum Alter von 4 Monaten in einer stressfreien Umgebung bleiben, damit er nicht verunsichert wird."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Wie reagieren Sie am besten, wenn Ihr Hund ängstliches Verhalten beim Anblick eines Gegenstandes zeigt?",
+    "answers": [
+      "Man sollte den Hund beruhigen und ihm erklären, dass er keinen Grund hat, sich vor diesem Gegenstand zu fürchten.",
+      "Man sollte den Hund für seine Angst bestrafen.",
+      "Man sollte die Angst des Hundes in diesem Augenblick ignorieren und weitergehen.",
+      "Man geht am besten näher mit dem Hund ran und hält die Nase an den Gegenstand, bis er sich nicht mehr fürchtet."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Warum reagieren viele Hunde an der Leine aggressiver?",
+    "answers": [
+      "Hunde an der Leine sind mutiger.",
+      "Hunde können sich an der Leine nicht frei bewegen und ausweichen und fühlen sich schneller bedroht .",
+      "Hunde sehen in der Leine ein Rudelmitglied.",
+      "Hunde ärgern sich darüber, dass sie angeleint sind und übertragen ihre Wut auf den anderen Hund."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Welche Konsequenzen ergeben sich in Niedersachsen durch die Brut- und Setzzeit?",
+    "answers": [
+      "Ich darf in dieser Zeit mit dem Hund in der freien Landschaft nur angeleint spazieren gehen.",
+      "Ich darf in dieser Zeit mit dem Hund nicht im Wald spazieren gehen.",
+      "Ich darf in dieser Zeit mit dem Hund nur in entsprechend ausgewiesenen Gebieten spazieren gehen.",
+      "Ich darf in dieser Zeit mit dem Hund nicht in der freien Landschaft spazieren gehen."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Plötzlich kommt auf dem Spaziergang ein fremder Hund und knurrt den eigenen - freilaufenden - an. Wie sollte man sich in dieser Situation verhalten?",
+    "answers": [
+      "Ich nehme meinen Hund schnell hoch, damit er nicht gebissen wird.",
+      "Ich stelle mich schützend vor meinen Hund, bereit, notfalls nach dem anderen Hund zu schlagen, wenn dieser noch näher kommt.",
+      "Ich wende mich ab und gehe weg und rufe meinen Hund zu mir, damit er mir folgen kann.",
+      "Ich bleibe stehen. Die Hunde werden diese Situation vermutlich in einer Rauferei klären. Das ist normales Hundeverhalten und ich muss ihnen die nötige Zeit dazu geben."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Sie gehen mit Ihrem freilaufenden Hund spazieren. Ein Spaziergänger bleibt zögernd und verängstigt stehen. Wie verhalten Sie sich?",
+    "answers": [
+      "Wenn es ein Ort ist, an dem man den Hund laufen lassen darf und der Hund brav ist, muss man nichts unternehmen.",
+      "Ich gehe auf die Leute zu und versichere, dass der Hund ganz lieb ist.",
+      "Ich rufe meinen Hund zu mir und erkläre ihm, dass die Leute Angst vor ihm haben.",
+      "Ich leine meinen Hund sofort an, denn andere Menschen sollen sich durch meinen Hund nicht bedroht fühlen."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Was ist geeignet, um die Sozialverträglichkeit des jungen Hundes zu fördern?",
+    "answers": [
+      "Es sollten ihm schon im Welpenalter viele soziale Reize angeboten werden.",
+      "Der Kontakt mit fremden Welpen sollte vermieden werden.",
+      "Die Trennung von Mutter und Wurfgeschwistern sollte möglichst früh erfolgen.",
+      "Er sollte von erwachsenen Hunden ferngehalten werden, damit er nicht unterdrückt wird."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Wie häufig und wie lange sollte man mit einem Hund üben?    ",
+    "answers": [
+      "Einmal am Tag eine Stunde lang.",
+      "So häufig, wie es geht, aber immer nur kurz, dann kann sich der Hund am besten konzentrieren.",
+      "Es ist besonders wichtig, dass man täglich immer zur selben Zeit übt. Wie lange man übt, ist abhängig vom Trainingsstand des Hundes.",
+      "Zwei kurze Übungen auf jedem Spaziergang sind absolut ausreichend, sonst wird der Hund überfordert."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Wie kann man vermeiden, dass der Hund durch Strafen das Vertrauen in seinen Besitzer verliert?",
+    "answers": [
+      "Durch Strafen verliert der Hund immer das Vertrauen in seinen Besitzer, daher sollte ganz darauf verzichtet werden.",
+      "Mit einer indirekten Strafe, wie mit der Wasserpistole zu spritzen. Dabei darf der Hund nicht bemerken, woher die Strafe kommt.",
+      "Mit einer indirekten Strafe, wie mit der Wasserpistole zu spritzen. Dabei sollte man gleichzeitig schimpfen, sonst versteht der Hund nicht, woher das Wasser kam.",
+      "Durch Schütteln am Nackenfell und gleichzeitigem Schimpfen."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Was kann passieren, wenn man ein bestimmtes Verhalten mit Futter belohnt?",
+    "answers": [
+      "Der Hund wird dieses Verhalten in Zukunft häufiger zeigen, weil er sich eine leckere Belohnung erhofft.",
+      "Der Hund macht diese Handlung nur noch, wenn er sieht, dass man Futter dabei hat.",
+      "Der Hund wird unnötig verweichlicht, denn eigentlich soll er aus Treue zum Besitzer brav sein und nicht weil er mit Futter bestochen wird.",
+      "Der Hund wird den Besitzer als „Rudelführer“ nicht mehr ernst nehmen, weil er weiß, dass er bei ihm Futter erbetteln kann."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Ab wann sollten Sie mit Ihrem Welpen eine Welpenspielgruppe besuchen?",
+    "answers": [
+      "Nachdem das Tier vom Züchter geholt wurde und sein neues Zuhause kennengelernt hat.",
+      "Ausschließlich bei abgeschlossenem Impfschutz.",
+      "Nachdem das Tier sich einige Wochen im neuen Zuhause eingewöhnt und keine Angst mehr hat.",
+      "Wenn Sie sich viel mit Ihrem Welpen beschäftigen, ist der Besuch einer Welpenspielgruppe überflüssig."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Aus welchem Grund ist es ratsam, dem Hund so früh wie möglich beizubringen, nicht an Leuten hochzuspringen?",
+    "answers": [
+      "Hunde können durch das Anspringen Menschen erschrecken und/oder verletzen.",
+      "Kleine Hunde können durch das Anspringen weder Kleidung zerreißen noch jemanden erschrecken, daher braucht man den Minis das Anspringen nicht abgewöhnen.",
+      "Da es ein Zeichen großer Freude ist und nichts mit Aggressivität zu tun hat, wenn ein Hund springt, muss man dem Hund das Anspringen nicht abgewöhnen. Es ist eine freundliche Geste.",
+      "Das ist eine Frage der Fürsorge gegenüber dem Tier, das nur freundlich Kontakt aufnehmen will."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Ihr eigener Hund knurrt Sie seit einigen Tagen immer an, wenn Sie ihn auf dem Rücken streicheln. Was tun Sie?",
+    "answers": [
+      "Sie suchen einen Tierarzt auf und lassen Ihren Hund untersuchen.",
+      "Sie streicheln den Hund nicht mehr auf dem Rücken.",
+      "Sie schimpfen laut mit ihm.",
+      "Sie streicheln ihn nur an diesen Stellen, um ihn zu provozieren."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Macht die Fütterung mit rohem, blutigem Fleisch einen Hund aggressiv?",
+    "answers": [
+      "Ja, wenn die Hunde einmal Blut geschmeckt haben, wollen sie es immer wieder haben.",
+      "Nein, der Geschmack des Fressens hat nichts mit der Aggressionsbereitschaft zu tun.",
+      "Ja, denn der Eiweißgehalt im Futter ist sehr hoch.",
+      "Nein, weil der Hund zufrieden ist, wenn er rohes, blutiges Fleisch gefressen hat und dann keinen Grund mehr zu aggressiven Verhalten hat."
+    ],
+    "correctAnswer": 1
+  },
+  {
     "question": "dummy",
     "answers": ["a", "b", "c", "d"],
     "correctAnswer": 0
