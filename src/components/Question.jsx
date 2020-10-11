@@ -88,7 +88,11 @@ class Question extends React.Component {
             ) : (
               ""
             )}
-            <FormControl component="fieldset" className={classes.formControl}>
+            <FormControl
+              component="fieldset"
+              className={classes.formControl}
+              fullWidth
+            >
               <RadioGroup
                 name="quiz-question"
                 value={this.state.selectedAnswer}
