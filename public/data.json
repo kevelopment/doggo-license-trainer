@@ -480,6 +480,588 @@
     "correctAnswer": 1
   },
   {
+    "question": "Wer muss für die Kosten aufkommen, die bei einem Tierarztbesuch entstehen?",
+    "answers": [
+      "Die Kosten für den Tierarzt bezahlt Ihre Krankenkasse.",
+      "Der Tierarzt wird von Steuergeldern bezahlt, da er als gemeinnützig eingestuft wird.",
+      "Tierärzte arbeiten auf Spendenbasis.",
+      "Der Halter muss für die Kosten aufkommen."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Wieviel sollte ein ausgewachsener Hund zu fressen bekommen?",
+    "answers": [
+      "Soviel, wie er braucht, damit er eine schlanke Figur hat und weder zu- noch abnimmt.",
+      "Hunden kann man Futter zur freien Verfügung hinstellen, sie fressen nur so viel, wie sie brauchen.",
+      "Hunde sollten stets genug zu fressen bekommen. Die Einhaltung eines Fastentages ist aber von ausschlaggebender Wichtigkeit für das Wohlergehen und die Gesundheit.",
+      "Hunde sollten immer ein bisschen Hunger haben, denn sonst neigen sie zu Ungehorsam."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Sie haben sich einen Welpen vom Züchter geholt. Was ist nun vor allem in den nächsten Wochen sehr wichtig?",
+    "answers": [
+      "Sie sollten den Welpen möglichst von lauten, unbekannten Geräuschen fernhalten, damit er sich nicht erschrickt.",
+      "Der Welpe sollte sich mit verschiedenen Menschen und Hunden auseinandersetzen sowie die Gegenstände und Geräusche seiner Umwelt kennenlernen.",
+      "Der Welpe bleibt erst einmal mindestens 4 Wochen zum Eingewöhnen im Haus und Garten.",
+      "Wichtig ist, dass möglichst unterschiedliche Menschen in großer Zahl kommen: kleine, große, junge und alte Männer wie Frauen."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Welche Aussage ist richtig?",
+    "answers": [
+      "Hunde sollten im Sommer häufiger gebadet werden als im Winter, da sie in der Wärme mächtig schwitzen.",
+      "Das sich in den Augenwinkeln bildende Sekret muss nicht entfernt werden, da es irgendwann von selbst abfällt.",
+      "Das Milchzahn- und das Erwachsenengebiss weisen die gleiche Anzahl von Zähnen auf.",
+      "Die regelmäßige Körperpflege des Hundes dient nicht nur der Hygiene, sondern festigt auch die soziale Bindung zwischen Mensch und Hund."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Die zuständige Behörde kann einen Hund als gefährlich einstufen, wenn ...",
+    "answers": [
+      "er ständig sehr stark an der Leine zieht.",
+      "er eine fremde Hündin ohne Erlaubnis des Besitzers gedeckt hat.",
+      "er ständig bellt.",
+      "er über das natürliche Maß hinausgehende Aggressivität zeigt."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Wie sollte ein Hundehalter vorbeugen, um im Falle eines durch seinen Hund verursachten Schadens rechtlich abgesichert zu sein?",
+    "answers": [
+      "Indem er einen guten Rechtsanwalt nach dem Vorfall aufsucht.",
+      "Indem er eine Haftpflichtversicherung abschließt.",
+      "Indem er seinen Hund gut erzieht.",
+      "Indem er der zuständigen Gemeinde den Erwerb des Tieres anzeigt."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Wann muss ich meinen Hund beim Spazierengehen an der Leine führen?",
+    "answers": [
+      "Wenn vom Gesetzgeber an diesem Ort bzw. aufgrund besonderer Vorkommnisse Leinenpflicht angeordnet ist.",
+      "Das ist überall per Gesetz vorgeschrieben.",
+      "Außerhalb der Brut- und Setzzeit kann ich den Hund überall freilaufen lassen, vorausgesetzt, er gehorcht gut.",
+      "Niemand kann mich dazu zwingen, meinen Hund anzuleinen."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Was ist bei einer Autofahrt mit Hund zu beachten?",
+    "answers": [
+      "Der Hund muss in einer Hundebox, mit Gitterabtrennung oder besonders angeschnallt transportiert werden.",
+      "Der beste Platz für den Hund ist der Beifahrersitz, da er von dort aus alles sehen kann.",
+      "Wenn der Hund folgsam und nicht zu groß ist, darf er sich frei im Auto bewegen.",
+      "Der Hund darf nur in einer Hundebox transportiert werden."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Welche Personen, die mit einem Hund spazieren gehen, müssen eine Sachkundeprüfung abgelegt haben?",
+    "answers": [
+      "Alle volljährigen Personen, die einen Hund führen, müssen die Sachkundeprüfung abgelegt haben.",
+      "Alle minderjährigen Personen müssen mindestens die theoretische Sachkundeprüfung abgelegt haben.",
+      "Nur der Halter muss die Sachkunde nachweisen können.",
+      "Alle Personen, die den Hund führen. Allerdings ist die praktische Sachkundeprüfung ausreichend."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Was folgt, wenn ein Hund einen Menschen gebissen hat und dies angezeigt wurde?",
+    "answers": [
+      "Der Hund wird von der zuständigen Behörde überprüft und es werden voraussichtlich Maßnahmen angeordnet.",
+      "Der Hund wird dem Halter fortgenommen und voraussichtlich eingeschläfert.",
+      "Der Hundehalter muss die Sachkundeprüfung wiederholen.",
+      "Die Behörde prüft, ob eine anderweitige Unterbringung des Hundes sinnvoll wäre."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Welche Hunde bezeichnet man als Mischlinge?",
+    "answers": [
+      "Nachkommen von Eltern der gleichen Rasse, die aber keine Zuchtpapiere haben.",
+      "Nachkommen von Eltern unterschiedlicher Rassen, bzw. die keiner Rasse angehören.",
+      "Nachkommen von Eltern gleicher Rasse, die aber aus verschiedenen Ländern stammen.",
+      "Nachkommen von einem großen Rüden und einer kleinen Hündin gleicher Rasse."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Ein Hund wedelt mit dem Schwanz und erscheint aufgeregt und unruhig. Wie schätzen Sie diese Situation ein?",
+    "answers": [
+      "Schwanzwedeln bedeutet immer Freude.",
+      "Schwanzwedeln zeigt an, dass der Hund erregt ist; es könnte Freude, aber auch Stress bedeuten.",
+      "Schwanzwedeln zeigt an, dass der Hund in jedem Fall freundlich ist.",
+      "Schwanzwedeln ist ein eindeutiges Zeichen für ängstliches Verhalten."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Achten Hunde auf die Körpersprache von Menschen?",
+    "answers": [
+      "Ja, Hunde achten sehr auf die Körpersprache von Menschen.",
+      "Nur wenn man es ihnen beigebracht hat.",
+      "Nein, wie sich Menschen verhalten, ist Hunden egal.",
+      "Nein, Hunde achten nur auf die Worte von Menschen."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Welchen Ausdruck zeigt dieser Hund?",
+    "answers": [
+      "Der Hund ist unterwürfig.",
+      "Der Hund droht selbstsicher.",
+      "Der Hund ist zurückhaltend und zeigt eine leichte Spielgeste.",
+      "Der Hund ist müde."
+    ],
+    "image": "Hund62.png",
+    "correctAnswer": 2
+  },
+  {
+    "question": "Welchen Ausdruck zeigt dieser Hund?",
+    "answers": [
+      "Der Hund ist ängstlich und unterwürfig.",
+      "Der Hund ist neutral bis aufmerksam.",
+      "Der Hund droht unsicher und ist erregt.",
+      "Der Hund zeigt eine Unterwerfungsgeste."
+    ],
+    "image": "Hund63.png",
+    "correctAnswer": 2
+  },
+  {
+    "question": "Welche Erfahrungen sind für ein reibungsloses Zusammenleben in der menschlichen Gesellschaft für einen Welpen wichtig?",
+    "answers": [
+      "Er sollte in positiven Begegnungen viele verschiedene Menschen (von Babys bis zu alten Menschen) kennen lernen.",
+      "Welpen müssen Kontakt mit Katzen haben, damit sie Katzen später nicht jagen.",
+      "Welpen sollten möglichst viel im heimischen Bereich gehalten werden, damit sie nicht überfordert werden.",
+      "Aufenthalte im Zwinger, damit der Welpe lernen kann, auch einmal alleine zu bleiben."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Darf ich meinen Hund im Wald ohne Leine laufen lassen?",
+    "answers": [
+      "Ja, nur nicht in der sogenannten Brut- und Setzzeit.",
+      "Ja, wenn mein Hund nicht jagt, darf ich ihn auch in der Brut- und Setzzeit ohne Leine laufen lassen.",
+      "Ja, sofern landesweite oder kommunale Regelungen keine Leinenpflicht vorschreiben.",
+      "Nein, im Wald sollte der Hund immer angeleint werden."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Welche der folgenden Aussagen trifft zu?",
+    "answers": [
+      "Hunde lernen ihr Leben lang.",
+      "Hunde lernen nur bis zu ihrem 8. Lebensmonat.",
+      "Welpen können noch nichts lernen.",
+      "Mit älteren Hunden braucht man nicht mehr zu arbeiten, da die Lernfähigkeit mit dem Verstreichen des 7. Lebensjahres verloren geht."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Der „Nackengriff“ mit Schütteln des Hundes im Genick ...",
+    "answers": [
+      "...ist artgerecht. ",
+      "...ist eine völlig ungeeignete „Strafmaßnahme“.",
+      "...empfindet ein Hund als Spiel.",
+      "...ist als „Strafmaßnahme“ sinnvoll."
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Welcher der folgenden Strafmaßnahmen ist sinnvoll?",
+    "answers": [
+      "Drehen auf den Rücken und gleichzeitiges Festhalten im Halsbereich.",
+      "Schütteln am Nackenfell.",
+      "Nichtbeachten des Hundes.",
+      "Harter Leinenruck."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Wie gehen Sie vor, wenn ihr Welpe in Ihrer Abwesenheit in den Flur uriniert hat?",
+    "answers": [
+      "Sie schimpfen ihn aus.",
+      "Sie stupsen ihn mit der Nase in das Bächlein.",
+      "Sie ignorieren den Vorfall und gehen mit dem Welpen nach draußen.",
+      "Sie schütteln den Welpen im Nackenfell und entfernen den Urin gründlich, damit er da nicht mehr hinmacht."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Warum zerstören manche Hunde Teile der Wohnung, wenn sie alleine zu Hause bleiben müssen?",
+    "answers": [
+      "Das machen nur besonders ordentliche Hunde, sie wollen aufräumen.",
+      "Sie wollen sich am Besitzer rächen, denn am liebsten wären sie mitgegangen.",
+      "Solche Hunde leiden häufig unter sogenannter Trennungsangst.",
+      "Der Hund hatte vermutlich Hunger."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Es kommt relativ häufig vor, dass Hunde Kinder im Gesicht verletzen. Warum?",
+    "answers": [
+      "Das Gesicht des Kindes ist häufig ungefähr auf Höhe der Hundeschnauze.",
+      "Kinder umarmen Hunde gerne und geben ihnen Küsse. Manche Hunde versuchen zurückzuküssen und schnappen dabei aus Versehen zu.",
+      "Die Gesichtsverletzungen entstehen meist nicht durch Bisse, sondern wenn die Kinder angesprungen werden und dabei hinfallen.",
+      "Hunde verletzen unbeabsichtigt gelegentlich das Gesicht eines Kindes, wenn sie über das „Lefzenlecken“ Beschwichtigung signalisieren wollen."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Ihr neu gekaufter Welpe will keine Treppen steigen. Was tun Sie?",
+    "answers": [
+      "Vorerst tragen Sie das Tier; wenn es sich eingelebt hat, können Sie anfangen, das Treppensteigen zu üben.",
+      "Sie ziehen den Hund einfach die ersten Tage die Treppe hinauf und hinab; er wird es bald lernen.",
+      "Hunde dürfen nie Treppen steigen, ich trage ihn natürlich.",
+      "Ich muss meinen Hund bis zum 12. Lebensmonat die Treppe hochtragen."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Wann sollte ein erwachsener Hund entwurmt werden?",
+    "answers": [
+      "Durch eine regelmäßige Entwurmung werden eventuell vorhandene Würmer abgetötet.",
+      "Wenn der Hund abnimmt, hat er bestimmt Würmer und muss vier Wochen lang wöchentlich entwurmt werden.",
+      "Wenn er aus dem After blutet.",
+      "Ein erwachsener Hund muss gar nicht mehr entwurmt werden."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Sollten Sie Ihren Hund baden?",
+    "answers": [
+      "Ja, täglich, damit der Hund sauber und keimfrei bleibt.",
+      "Ja, etwa alle 1-2 Wochen mit Shampoo.",
+      "Ja, aber nur im Bedarfsfall (Hund hat sich in Unrat gewälzt) und dann mit einem Hundeshampoo.",
+      "Nein, auf keinen Fall."
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Welche Bedürfnisse des Hundes müssen bei tiergerechter Haltung täglich ausreichend erfüllt werden?",
+    "answers": [
+      "Der Hund muss ausreichend, d. h. mehrere Stunden täglich geistig und körperlich gefordert werden.",
+      "Der Hund muss jeden Tag mindestens zweimal 2 - 3 Stunden spazieren gehen.",
+      "Der Hund muss täglich mindestens zwei Mahlzeiten erhalten.",
+      "Der Hund sollte vorwiegend in einer Zwingeranlage mit gut isoliertem Boden gehalten werden."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Wenn man einen Welpen kauft, sollte man ...",
+    "answers": [
+      "besonders in der ersten Phase viel Zeit (ggf. Urlaub) haben, um sich bestmöglich um den Hund kümmern zu können.",
+      "den Züchter gut aussuchen, nur VDH-Züchter haben gute Hunde.",
+      "unbedingt einen Garten haben, denn sonst ist es sehr problematisch, den Hund stubenrein zu bekommen.",
+      "sicher sein, dass der Hund auch ins das Auto passt."
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Darf ihr Hund auf den Kinderspielplatz?",
+    "answers": [
+      "Ja, aufgrund kommunaler Regelungen aber meistens nur an der Leine.",
+      "Ja, wenn der Hund nicht aggressiv ist auch ohne Leine.",
+      "Ja, wenn der Hund relativ gut auf Kommandos hört, auch ohne Leine.",
+      "Nein, aufgrund kommunaler Regelungen ist das in der Regel nicht erlaubt."
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "dummy",
+    "answers": ["a", "b", "c", "d"],
+    "correctAnswer": 0
+  },
+  {
     "question": "dummy",
     "answers": ["a", "b", "c", "d"],
     "correctAnswer": 0
