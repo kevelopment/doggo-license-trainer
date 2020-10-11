@@ -14,7 +14,7 @@ import { Routes } from "../App";
 
 class Home extends React.Component {
   /**
-   * Redirects to the Training components.
+   * Redirects to the Training component.
    *
    * @memberof Home
    */
@@ -81,9 +81,6 @@ class Home extends React.Component {
 const styles = (theme) => ({
   container: {
     display: "flex",
-    // flexDirection: "row",
-    // justifyContent: "space-evenly",
-    // alignItems: "stretch",
   },
 });
 

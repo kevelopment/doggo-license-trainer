@@ -38,7 +38,6 @@ class App extends React.Component {
     allQuestions: [],
     isLoaded: false,
     currentIndex: 0,
-    currentRoute: Routes.HOME,
   };
 
   async componentDidMount() {
@@ -54,10 +53,6 @@ class App extends React.Component {
     this.setState({ currentIndex: index });
   };
 
-  setCurrentRoute = (route) => {
-    this.setState({ currentRoute: route });
-  };
-
   render() {
     return (
       <ThemeProvider theme={appTheme}>
@@ -66,19 +61,17 @@ class App extends React.Component {
           <ConfigurationBar
             currentQuestionIndex={this.state.currentIndex}
             maxNumberQuestions={this.state.maxIndex}
+            route={this.state.currentRoute}
           />
 
           <Box flex="1 1 auto" p={4}>
             <BrowserRouter>
               <Switch>
-                <Route path={Routes.EXAM}>
-                  {<Exam setRoute={this.setCurrentRoute} />}
-                </Route>
+                <Route path={Routes.EXAM}>{<Exam />}</Route>
                 <Route path={Routes.TRAINING}>
                   <Training
                     questions={this.state.allQuestions}
                     setIndex={this.setCurrentIndex}
-                    setRoute={this.setCurrentRoute}
                   />
                 </Route>
                 <Route path={Routes.HOME}>

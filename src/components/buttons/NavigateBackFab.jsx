@@ -5,6 +5,7 @@ import { withRouter } from "react-router-dom";
 
 class NavigateBackFab extends React.Component {
   navigateBack = () => {
+    this.props.onClick();
     this.props.history.goBack();
   };
 
