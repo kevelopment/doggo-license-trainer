@@ -6,6 +6,7 @@ import {
   CardHeader,
   CircularProgress,
   Typography,
+  withStyles,
 } from "@material-ui/core";
 import React from "react";
 import { withRouter } from "react-router-dom";
@@ -34,44 +35,56 @@ class Home extends React.Component {
     if (this.props.isLoaded === false) {
       return (
         <Box display="flex" justifyContent="center">
-          <CircularProgress size={"10vh"} height={"50vh"} />
+          <CircularProgress size={"10vh"} />
         </Box>
       );
     }
 
+    const { classes } = this.props;
     return (
       <Card>
-        <CardHeader title="Please select a training mode" />
-        <CardContent>
-          <Typography>Training-Mode:</Typography>
-          <Typography>
-            Practice all Questions in a row with direct evaluation.
-          </Typography>
-          <Button
-            color="secondary"
-            variant="contained"
-            onClick={this.startTraining}
-          >
-            Start Training
-          </Button>
-        </CardContent>
-        <CardContent>
-          <Typography>Exam-Mode</Typography>
-          <Typography>
-            Practice a certain number of Questions in a row with evaluation
-            after all questions have been answered.
-          </Typography>
-          <Button
-            color="secondary"
-            variant="contained"
-            onClick={this.startExam}
-          >
-            Start Exam
-          </Button>
+        <CardHeader title="Please select a mode to start" />
+        <CardContent className={classes.container}>
+          <Box flex={1} width={0.5} p={2}>
+            <Typography>Training-Mode:</Typography>
+            <Typography>
+              Practice all Questions in a row with direct evaluation.
+            </Typography>
+            <Button
+              color="secondary"
+              variant="contained"
+              onClick={this.startTraining}
+            >
+              Start Training
+            </Button>
+          </Box>
+          <Box flex={1} width={0.5} p={2}>
+            <Typography>Exam-Mode</Typography>
+            <Typography>
+              Practice a certain number of Questions in a row with evaluation
+              after all questions have been answered.
+            </Typography>
+            <Button
+              color="secondary"
+              variant="contained"
+              onClick={this.startExam}
+            >
+              Start Exam
+            </Button>
+          </Box>
         </CardContent>
       </Card>
     );
   }
 }
 
-export default withRouter(Home);
+const styles = (theme) => ({
+  container: {
+    display: "flex",
+    // flexDirection: "row",
+    // justifyContent: "space-evenly",
+    // alignItems: "stretch",
+  },
+});
+
+export default withRouter(withStyles(styles)(Home));

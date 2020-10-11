@@ -1,8 +1,8 @@
 import {
-  Container,
+  Box,
   createMuiTheme,
+  CssBaseline,
   ThemeProvider,
-  Toolbar,
 } from "@material-ui/core";
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -28,16 +28,17 @@ const appTheme = createMuiTheme({
  * Defines the available app routes
  */
 export const Routes = Object.freeze({
-  ROOT: "/",
+  HOME: "/",
   TRAINING: "/training",
   EXAM: "/exam",
 });
 
-export class App extends React.Component {
+class App extends React.Component {
   state = {
     allQuestions: [],
     isLoaded: false,
     currentIndex: 0,
+    currentRoute: Routes.HOME,
   };
 
   async componentDidMount() {
@@ -53,30 +54,40 @@ export class App extends React.Component {
     this.setState({ currentIndex: index });
   };
 
+  setCurrentRoute = (route) => {
+    this.setState({ currentRoute: route });
+  };
+
   render() {
     return (
       <ThemeProvider theme={appTheme}>
-        <ConfigurationBar
-          currentQuestionIndex={this.state.currentIndex}
-          maxNumberQuestions={this.state.maxIndex}
-        />
-        <Toolbar />
-        <Container>
-          <BrowserRouter>
-            <Switch>
-              <Route path={Routes.EXAM}>{<Exam />}</Route>
-              <Route path={Routes.TRAINING}>
-                <Training
-                  questions={this.state.allQuestions}
-                  setIndex={this.setCurrentIndex}
-                />
-              </Route>
-              <Route path={Routes.ROOT}>
-                <Home isLoaded={this.state.isLoaded} />
-              </Route>
-            </Switch>
-          </BrowserRouter>
-        </Container>
+        <CssBaseline />
+        <Box width={1} height={1} display="flex" flexDirection="column">
+          <ConfigurationBar
+            currentQuestionIndex={this.state.currentIndex}
+            maxNumberQuestions={this.state.maxIndex}
+          />
+
+          <Box flex="1 1 auto" p={4}>
+            <BrowserRouter>
+              <Switch>
+                <Route path={Routes.EXAM}>
+                  {<Exam setRoute={this.setCurrentRoute} />}
+                </Route>
+                <Route path={Routes.TRAINING}>
+                  <Training
+                    questions={this.state.allQuestions}
+                    setIndex={this.setCurrentIndex}
+                    setRoute={this.setCurrentRoute}
+                  />
+                </Route>
+                <Route path={Routes.HOME}>
+                  <Home isLoaded={this.state.isLoaded} />
+                </Route>
+              </Switch>
+            </BrowserRouter>
+          </Box>
+        </Box>
       </ThemeProvider>
     );
   }

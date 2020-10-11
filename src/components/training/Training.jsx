@@ -1,14 +1,18 @@
+import { Box } from "@material-ui/core";
 import React from "react";
+import { Routes } from "../../App";
 import shuffle from "../../helper/ArrayHelper";
+import NavigateBackFab from "../buttons/NavigateBackFab";
 import TrainingQuestion from "./TrainingQuestion";
 
-export default class Training extends React.Component {
+class Training extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       currentIndex: 0,
       questions: shuffle(props.questions),
     };
+    this.props.setRoute(Routes.TRAINING);
   }
 
   incrementCurrentIndex = () => {
@@ -47,6 +51,13 @@ export default class Training extends React.Component {
   };
 
   render() {
-    return <>{this.renderQuestions(this.props.questions)}</>;
+    return (
+      <Box>
+        {this.renderQuestions(this.props.questions)}
+        <NavigateBackFab />
+      </Box>
+    );
   }
 }
+
+export default Training;
