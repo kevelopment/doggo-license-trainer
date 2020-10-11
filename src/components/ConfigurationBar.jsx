@@ -36,7 +36,7 @@ class ConfigurationBar extends React.Component {
             <Typography variant="h6" noWrap>
               Question{" "}
               {`${this.props.currentQuestionIndex + 1} / ${
-                this.props.maxNumberQuestions + 1
+                this.props.maxNumberQuestions
               }`}
             </Typography>
           ) : (
