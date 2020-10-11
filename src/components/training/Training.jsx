@@ -12,6 +12,7 @@ class Training extends React.Component {
       questions: shuffle(props.questions),
     };
     this.props.setIndex(this.state.currentIndex);
+    this.props.setMaxIndex(this.state.questions.length);
   }
 
   incrementCurrentIndex = () => {

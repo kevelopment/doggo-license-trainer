@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Card,
   CardActions,
@@ -76,6 +77,18 @@ class Question extends React.Component {
             title={`${this.props.index + 1}. ${this.props.question.question}`}
           ></CardHeader>
           <CardContent>
+            {this.props.question.image ? (
+              <Box style={{ textAlign: "center" }}>
+                <img
+                  src={
+                    process.env.PUBLIC_URL + "/img/" + this.props.question.image
+                  }
+                  alt={this.props.question.image}
+                />
+              </Box>
+            ) : (
+              ""
+            )}
             <FormControl component="fieldset" className={classes.formControl}>
               <RadioGroup
                 name="quiz-question"

@@ -25,12 +25,23 @@ class ConfigurationBar extends React.Component {
           <Typography variant="h6" className={classes.title} noWrap>
             Doggo-Trainer
           </Typography>
-          <Typography variant="h6" className={classes.stepIndicator} noWrap>
-            Question{" "}
-            {`${this.props.currentQuestionIndex + 1} / ${
-              this.props.maxNumberQuestions + 1
-            }`}
-          </Typography>
+          {this.props.showTimer ? (
+            <Typography variant="h6" noWrap>
+              Time remaining: {this.props.timeRemaining}
+            </Typography>
+          ) : (
+            ""
+          )}
+          {this.props.showQuestion ? (
+            <Typography variant="h6" noWrap>
+              Question{" "}
+              {`${this.props.currentQuestionIndex + 1} / ${
+                this.props.maxNumberQuestions + 1
+              }`}
+            </Typography>
+          ) : (
+            ""
+          )}
         </Toolbar>
       </AppBar>
     );

@@ -53,6 +53,10 @@ class App extends React.Component {
     this.setState({ currentIndex: index });
   };
 
+  setMaxIndex = (index) => {
+    this.setState({ maxIndex: index });
+  };
+
   render() {
     return (
       <ThemeProvider theme={appTheme}>
@@ -61,15 +65,28 @@ class App extends React.Component {
           <ConfigurationBar
             currentQuestionIndex={this.state.currentIndex}
             maxNumberQuestions={this.state.maxIndex}
-            route={this.state.currentRoute}
+            showQuestion={
+              window.location.pathname === Routes.TRAINING ||
+              window.location.pathname === Routes.EXAM
+            }
+            showTimer={window.location.pathname === Routes.EXAM}
           />
 
           <Box flex="1 1 auto" p={4}>
             <BrowserRouter>
               <Switch>
-                <Route path={Routes.EXAM}>{<Exam />}</Route>
+                <Route path={Routes.EXAM}>
+                  {
+                    <Exam
+                      questions={this.state.allQuestions}
+                      setIndex={this.setCurrentIndex}
+                      setMaxIndex={this.setMaxIndex}
+                    />
+                  }
+                </Route>
                 <Route path={Routes.TRAINING}>
                   <Training
+                    setMaxIndex={this.setMaxIndex}
                     questions={this.state.allQuestions}
                     setIndex={this.setCurrentIndex}
                   />

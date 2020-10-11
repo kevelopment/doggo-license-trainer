@@ -2,17 +2,19 @@ import { Fab, withStyles } from "@material-ui/core";
 import { ArrowBack } from "@material-ui/icons";
 import React from "react";
 import { withRouter } from "react-router-dom";
+import { Routes } from "../../App";
 
 class NavigateBackFab extends React.Component {
   navigateBack = () => {
     this.props.onClick();
-    this.props.history.goBack();
+    this.props.history.push(Routes.HOME);
   };
 
   render() {
     const { classes } = this.props;
     return (
       <Fab
+        color="secondary"
         variant="extended"
         className={classes.fab}
         onClick={this.navigateBack}
