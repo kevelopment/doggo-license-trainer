@@ -10,6 +10,7 @@ class Training extends React.Component {
     this.state = {
       currentIndex: 0,
       questions: shuffle(props.questions),
+      direction: "down",
     };
     this.props.setIndex(this.state.currentIndex);
     this.props.setMaxIndex(this.state.questions.length);
@@ -18,12 +19,12 @@ class Training extends React.Component {
   incrementCurrentIndex = () => {
     let { currentIndex } = this.state;
     let nextIndex = ++currentIndex;
-    if (nextIndex > this.props.questions.length) {
+    if (nextIndex > this.state.questions.length) {
       nextIndex = 0;
     }
 
     this.props.setIndex(nextIndex);
-    this.setState({ currentIndex: nextIndex });
+    this.setState({ currentIndex: nextIndex, direction: "left" });
   };
 
   decrementCurrentIndex = () => {
@@ -34,7 +35,7 @@ class Training extends React.Component {
     }
 
     this.props.setIndex(previousIndex);
-    this.setState({ currentIndex: previousIndex });
+    this.setState({ currentIndex: previousIndex, direction: "right" });
   };
 
   stopTraining = () => {
@@ -50,6 +51,7 @@ class Training extends React.Component {
         onPrevious={this.decrementCurrentIndex}
         index={this.state.currentIndex}
         hidden={index !== this.state.currentIndex}
+        direction={this.state.direction}
         key={`question-${index}`}
       />
     ));
@@ -58,7 +60,7 @@ class Training extends React.Component {
   render() {
     return (
       <Box>
-        {this.renderQuestions(this.props.questions)}
+        {this.renderQuestions(this.state.questions)}
         <NavigateBackFab onClick={this.stopTraining} />
       </Box>
     );

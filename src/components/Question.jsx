@@ -20,7 +20,6 @@ class Question extends React.Component {
     isWrongAnswer: false,
     selectedAnswer: -1,
     helperText: undefined,
-    direction: "left",
   };
 
   componentDidUpdate(prevProps) {
@@ -42,7 +41,7 @@ class Question extends React.Component {
     ) {
       helperText = "Wrong answer :( please choose another option.";
     }
-    this.setState({ helperText, direction: "right" });
+    this.setState({ helperText });
 
     // if helper text was not set: correct answer, go to the next question
     if (!helperText) {
@@ -51,7 +50,7 @@ class Question extends React.Component {
   };
 
   showPreviousQuestion = () => {
-    this.setState({ helperText: undefined, direction: "left" });
+    this.setState({ helperText: undefined });
     this.props.onPrevious();
   };
 
@@ -68,7 +67,7 @@ class Question extends React.Component {
     return (
       <Slide
         in={this.props.hidden === false}
-        direction={this.state.direction}
+        direction={this.props.direction}
         mountOnEnter
         unmountOnExit
       >
