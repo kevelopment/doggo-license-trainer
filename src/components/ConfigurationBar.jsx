@@ -6,10 +6,12 @@ import {
   withStyles,
 } from "@material-ui/core";
 import { Menu } from "@material-ui/icons";
+import moment from "moment";
 import React from "react";
 
 class ConfigurationBar extends React.Component {
   render() {
+    const timeLeft = moment.duration(this.props.timeRemaining, "seconds");
     const { classes } = this.props;
     return (
       <AppBar position="sticky" className={"no-selection"}>
@@ -26,8 +28,8 @@ class ConfigurationBar extends React.Component {
             Doggo-Trainer
           </Typography>
           {this.props.showTimer ? (
-            <Typography variant="h6" noWrap>
-              Time remaining: {this.props.timeRemaining}
+            <Typography className={classes.timer} variant="h6" noWrap>
+              {`Time remaining: ${timeLeft.minutes()}:${timeLeft.seconds()} min`}
             </Typography>
           ) : (
             ""
@@ -60,6 +62,9 @@ const styles = (theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
+  },
+  timer: {
+    marginRight: theme.spacing(4),
   },
 });
 export default withStyles(styles)(ConfigurationBar);

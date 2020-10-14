@@ -38,6 +38,7 @@ class App extends React.Component {
     allQuestions: [],
     isLoaded: false,
     currentIndex: 0,
+    timeRemaining: 0,
   };
 
   async componentDidMount() {
@@ -57,6 +58,10 @@ class App extends React.Component {
     this.setState({ maxIndex: index });
   };
 
+  setTimeRemaining = (timeRemaining) => {
+    this.setState({ timeRemaining });
+  };
+
   render() {
     return (
       <ThemeProvider theme={appTheme}>
@@ -65,6 +70,7 @@ class App extends React.Component {
           <ConfigurationBar
             currentQuestionIndex={this.state.currentIndex}
             maxNumberQuestions={this.state.maxIndex}
+            timeRemaining={this.state.timeRemaining}
             showQuestion={
               window.location.pathname === Routes.TRAINING ||
               window.location.pathname === Routes.EXAM
@@ -81,6 +87,7 @@ class App extends React.Component {
                       questions={this.state.allQuestions}
                       setIndex={this.setCurrentIndex}
                       setMaxIndex={this.setMaxIndex}
+                      setTimeRemaining={this.setTimeRemaining}
                     />
                   }
                 </Route>

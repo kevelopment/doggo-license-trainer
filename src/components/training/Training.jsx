@@ -2,7 +2,7 @@ import { Box } from "@material-ui/core";
 import React from "react";
 import shuffle from "../../helper/ArrayHelper";
 import NavigateBackFab from "../buttons/NavigateBackFab";
-import TrainingQuestion from "./TrainingQuestion";
+import Question from "../Question";
 
 class Training extends React.Component {
   constructor(props) {
@@ -16,11 +16,16 @@ class Training extends React.Component {
     this.props.setMaxIndex(this.state.questions.length);
   }
 
-  incrementCurrentIndex = () => {
-    let { currentIndex } = this.state;
-    let nextIndex = ++currentIndex;
+  incrementCurrentIndex = ({ isValid }) => {
+    const { currentIndex } = this.state;
+    let nextIndex = currentIndex + 1;
     if (nextIndex > this.state.questions.length) {
       nextIndex = 0;
+    }
+    console.log(isValid);
+
+    if (!isValid) {
+      return;
     }
 
     this.props.setIndex(nextIndex);
@@ -28,8 +33,8 @@ class Training extends React.Component {
   };
 
   decrementCurrentIndex = () => {
-    let { currentIndex } = this.state;
-    let previousIndex = --currentIndex;
+    const { currentIndex } = this.state;
+    let previousIndex = currentIndex - 1;
     if (previousIndex < 0) {
       previousIndex = 0;
     }
@@ -45,7 +50,7 @@ class Training extends React.Component {
 
   renderQuestions = (questions) => {
     return questions.map((question, index) => (
-      <TrainingQuestion
+      <Question
         question={question}
         onNext={this.incrementCurrentIndex}
         onPrevious={this.decrementCurrentIndex}

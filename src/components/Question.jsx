@@ -32,21 +32,27 @@ class Question extends React.Component {
     this.setState({ selectedAnswer: +event.target.value });
   };
 
-  checkIfCorrect = () => {
+  onNext = () => {
     let helperText = undefined;
+    let isValid = true;
     if (this.state.selectedAnswer === -1) {
+      isValid = false;
       helperText = "Please select an answer.";
     } else if (
       this.state.selectedAnswer !== this.props.question.correctAnswer
     ) {
-      helperText = "Wrong answer :( please choose another option.";
+      isValid = false;
+      helperText = "Wrong answer!";
     }
-    this.setState({ helperText });
 
-    // if helper text was not set: correct answer, go to the next question
-    if (!helperText) {
-      this.props.onNext();
+    if (!isValid && this.props.showCorrectAnswer) {
+      helperText = `Correct answer: \n ${
+        this.props.question.answers[this.props.question.correctAnswer]
+      }`;
     }
+
+    this.setState({ helperText });
+    this.props.onNext({ isValid });
   };
 
   showPreviousQuestion = () => {
@@ -71,8 +77,9 @@ class Question extends React.Component {
         mountOnEnter
         unmountOnExit
       >
-        <Card>
+        <Card className={classes.container}>
           <CardHeader
+            // TODO calculate index through indexOf
             title={`${this.props.index + 1}. ${this.props.question.question}`}
           ></CardHeader>
           <CardContent>
@@ -88,9 +95,12 @@ class Question extends React.Component {
             ) : (
               ""
             )}
+
             <FormControl
               component="fieldset"
               className={classes.formControl}
+              // TODO: if disabled show success or fail icon
+              disabled={this.props.disableControls}
               fullWidth
             >
               <RadioGroup
@@ -113,21 +123,29 @@ class Question extends React.Component {
             </FormHelperText>
           </CardContent>
           <CardActions>
-            <Button
-              className={classes.leftAlign}
-              color="primary"
-              onClick={this.showPreviousQuestion}
-              disabled={this.props.index === 0}
-            >
-              Previous
-            </Button>
-            <Button
-              className={classes.rightAlign}
-              color="primary"
-              onClick={this.checkIfCorrect}
-            >
-              Next
-            </Button>
+            {this.props.hidePrevious ? (
+              ""
+            ) : (
+              <Button
+                className={classes.leftAlign}
+                color="primary"
+                onClick={this.showPreviousQuestion}
+                disabled={this.props.index === 0}
+              >
+                Previous
+              </Button>
+            )}
+            {this.props.disableControls ? (
+              ""
+            ) : (
+              <Button
+                className={classes.rightAlign}
+                color="primary"
+                onClick={this.onNext}
+              >
+                Next
+              </Button>
+            )}
           </CardActions>
         </Card>
       </Slide>
@@ -140,6 +158,7 @@ const styles = (theme) => ({
   formHelper: { textAlign: "center", color: theme.palette.error.main },
   leftAlign: { marginRight: "auto" },
   rightAlign: { marginLeft: "auto" },
+  container: { marginBottom: theme.spacing(2), marginTop: theme.spacing(2) },
 });
 
 export default withStyles(styles)(Question);
