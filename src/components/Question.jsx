@@ -79,7 +79,6 @@ class Question extends React.Component {
       >
         <Card className={classes.container}>
           <CardHeader
-            // TODO calculate index through indexOf
             title={`${this.props.index + 1}. ${this.props.question.question}`}
           ></CardHeader>
           <CardContent>
@@ -95,7 +94,6 @@ class Question extends React.Component {
             ) : (
               ""
             )}
-
             <FormControl
               component="fieldset"
               className={classes.formControl}

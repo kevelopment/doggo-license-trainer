@@ -22,7 +22,6 @@ class Training extends React.Component {
     if (nextIndex > this.state.questions.length) {
       nextIndex = 0;
     }
-    console.log(isValid);
 
     if (!isValid) {
       return;

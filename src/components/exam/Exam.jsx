@@ -97,20 +97,15 @@ class Exam extends React.Component {
       return 0;
     }
 
-    return (
-      (this.state.questions.length / this.state.correctAnswers) *
-      100
-    ).toFixed(3);
+    return (this.state.correctAnswers / this.state.questions.length) * 100;
   };
 
   renderQuestions = (questions) => {
-    // show all questions if isFinished
-
     return questions.map((question, index) => (
       <Question
         question={question}
         onNext={this.incrementCurrentIndex}
-        index={this.state.currentIndex}
+        index={index}
         hidden={this.state.currentIndex !== index && !this.state.isFinished}
         direction={this.state.direction}
         key={`question-${index}`}
@@ -130,9 +125,8 @@ class Exam extends React.Component {
             <CardContent>
               <Typography>
                 Correct answers: {this.state.correctAnswers} /{" "}
-                {this.state.questions.length}
+                {this.state.questions.length} ({this.getResultPercentage()}%)
               </Typography>
-              <Typography>In percent: {this.getResultPercentage()}%</Typography>
             </CardContent>
           </Card>
         ) : (

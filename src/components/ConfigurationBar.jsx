@@ -1,11 +1,12 @@
 import {
   AppBar,
+  Box,
   IconButton,
   Toolbar,
   Typography,
   withStyles,
 } from "@material-ui/core";
-import { Menu } from "@material-ui/icons";
+import { HourglassEmpty, Menu } from "@material-ui/icons";
 import moment from "moment";
 import React from "react";
 
@@ -28,9 +29,12 @@ class ConfigurationBar extends React.Component {
             Doggo-Trainer
           </Typography>
           {this.props.showTimer ? (
-            <Typography className={classes.timer} variant="h6" noWrap>
-              {`Time remaining: ${timeLeft.minutes()}:${timeLeft.seconds()} min`}
-            </Typography>
+            <Box flexDirection="row" display="flex" alignItems="center">
+              <HourglassEmpty></HourglassEmpty>
+              <Typography className={classes.timer} variant="h6" noWrap>
+                {`${timeLeft.minutes()}:${timeLeft.seconds()} min`}
+              </Typography>
+            </Box>
           ) : (
             ""
           )}
