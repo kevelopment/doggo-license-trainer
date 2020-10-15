@@ -66,7 +66,13 @@ class App extends React.Component {
     return (
       <ThemeProvider theme={appTheme}>
         <CssBaseline />
-        <Box width={1} height={1} display="flex" flexDirection="column">
+        <Box
+          width={1}
+          height={1}
+          display="flex"
+          flexDirection="column"
+          data-testid="body-container"
+        >
           <ConfigurationBar
             currentQuestionIndex={this.state.currentIndex}
             maxNumberQuestions={this.state.maxIndex}
