@@ -11,8 +11,7 @@ import NavigateBackFab from "../buttons/NavigateBackFab";
 import Question from "../Question";
 
 const EXAM_TIME = 45 * 60;
-// const QUESTIONS_IN_EXAM = 35;
-const QUESTIONS_IN_EXAM = 2;
+const QUESTIONS_IN_EXAM = 35;
 
 class Exam extends React.Component {
   constructor(props) {
