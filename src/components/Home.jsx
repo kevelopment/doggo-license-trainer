@@ -45,7 +45,7 @@ class Home extends React.Component {
       <Card>
         <CardHeader title="Please select a mode to start" />
         <CardContent className={classes.container}>
-          <Box flex={1} width={0.5} p={2}>
+          <Box flex={1} width={1} p={2}>
             <Typography>Training-Mode:</Typography>
             <Typography>
               Practice all Questions in a row with direct evaluation.
@@ -58,7 +58,7 @@ class Home extends React.Component {
               Start Training
             </Button>
           </Box>
-          <Box flex={1} width={0.5} p={2}>
+          <Box flex={1} width={1} p={2}>
             <Typography>Exam-Mode</Typography>
             <Typography>
               Practice a certain number of Questions in a row with evaluation
@@ -81,6 +81,7 @@ class Home extends React.Component {
 const styles = (theme) => ({
   container: {
     display: "flex",
+    flexDirection: "column",
   },
 });
 
