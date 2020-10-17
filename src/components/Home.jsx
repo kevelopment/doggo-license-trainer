@@ -43,7 +43,10 @@ class Home extends React.Component {
     const { classes } = this.props;
     return (
       <Card>
-        <CardHeader title="Please select a mode to start" />
+        <CardHeader
+          title="Please select a mode to start"
+          style={{ textAlign: "center" }}
+        />
         <CardContent className={classes.container}>
           <Box flex={1} width={1} p={2}>
             <Typography>Training-Mode:</Typography>
