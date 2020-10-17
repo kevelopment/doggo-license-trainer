@@ -1,12 +1,11 @@
 import {
   AppBar,
   Box,
-  IconButton,
   Toolbar,
   Typography,
   withStyles,
 } from "@material-ui/core";
-import { HourglassEmpty, Menu } from "@material-ui/icons";
+import { HourglassEmpty } from "@material-ui/icons";
 import moment from "moment";
 import React from "react";
 
