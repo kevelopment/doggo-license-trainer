@@ -14,10 +14,10 @@ jobs:
         run: yarn build
       - name: Push to github.io
         uses: cpina/github-action-push-to-another-repository@master
-          env:
-            API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-          with:
-            source-directory: 'build'
-            destination-github-username: 'vudor'
-            destination-repository-name: 'vudor.github.io'
-            user-email: kevinadam@gmx.de
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: "build"
+          destination-github-username: "vudor"
+          destination-repository-name: "vudor.github.io"
+          user-email: kevinadam@gmx.de
