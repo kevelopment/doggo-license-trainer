@@ -17,14 +17,6 @@ class ConfigurationBar extends React.Component {
     return (
       <AppBar position="sticky" className={"no-selection"}>
         <Toolbar>
-          <IconButton
-            className={classes.menuButton}
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-          >
-            <Menu />
-          </IconButton>
           <Typography variant="h6" className={classes.title} noWrap>
             Doggo-Trainer
           </Typography>
@@ -40,7 +32,6 @@ class ConfigurationBar extends React.Component {
           )}
           {this.props.showQuestion ? (
             <Typography variant="h6" noWrap>
-              Question{" "}
               {`${this.props.currentQuestionIndex + 1} / ${
                 this.props.maxNumberQuestions
               }`}
