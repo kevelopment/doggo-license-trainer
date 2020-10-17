@@ -1,5 +1,7 @@
-name: Tests
-on: [push]
+name: Run CI-CD Pipeline
+on:
+  push:
+    branches:
 jobs:
   run-tests:
     runs-on: ubuntu-latest
@@ -21,3 +23,4 @@ jobs:
           destination-github-username: "vudor"
           destination-repository-name: "vudor.github.io"
           user-email: kevinadam@gmx.de
+          target-branch: "main"
