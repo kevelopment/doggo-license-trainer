@@ -29,8 +29,8 @@ class NavigateBackFab extends React.Component {
 const styles = (theme) => ({
   fab: {
     position: "absolute",
-    bottom: theme.spacing(4),
-    left: theme.spacing(4),
+    bottom: theme.spacing(2),
+    left: theme.spacing(2),
   },
   fabIcon: {
     marginRight: theme.spacing(1),

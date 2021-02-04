@@ -51,6 +51,8 @@ class Question extends React.Component {
       }`;
     }
 
+    // scroll to top when next question is shown
+    window.scrollTo(0, 0);
     this.setState({ helperText });
     this.props.onNext({ isValid });
   };

@@ -84,7 +84,7 @@ class App extends React.Component {
             showTimer={window.location.pathname === Routes.EXAM}
           />
 
-          <Box flex="1 1 auto" p={4}>
+          <Box flex="1 1 auto" p={2}>
             <BrowserRouter>
               <Switch>
                 <Route path={Routes.EXAM}>
