@@ -1,10 +1,9 @@
 import React, { createContext, useState } from 'react';
-
-export type Theme = 'light' | 'dark';
+import { useDarkMode } from "usehooks-ts";
 
 export interface ThemeContextProps {
-  theme: Theme;
-  switchTheme: () => void;
+  isDark: boolean;
+  toggle: () => void;
 }
 
 export const ThemeContext = createContext<ThemeContextProps>({} as ThemeContextProps);
@@ -14,16 +13,13 @@ export type TrainingProvierProps = {
 };
 
 const ThemeContextProvider = ({ children }: TrainingProvierProps) => {
-  const [theme, setTheme] = useState<Theme>('dark');
-  const switchTheme = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-  }
+  const {isDarkMode: isDark, toggle} = useDarkMode();
 
   const value = {
-    theme,
-    switchTheme
+    isDark,
+    toggle
   }
-  return <ThemeContext.Provider value={value}>{children(theme)}</ThemeContext.Provider>;
+  return <ThemeContext.Provider value={value}>{children(isDark)}</ThemeContext.Provider>;
 };
 
 export default ThemeContextProvider;

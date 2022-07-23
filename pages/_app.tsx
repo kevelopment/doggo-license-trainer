@@ -3,9 +3,10 @@ import type { AppProps } from 'next/app'
 import createEmotionCache from "../utils/emotion-cache";
 import { CacheProvider } from "@emotion/react";
 import { ThemeProvider } from "@mui/system";
-import { darkTheme, lightTheme } from "../styles/theme/theme";
 import { CssBaseline } from "@mui/material";
-import ThemeContextProvider, { Theme } from "../context/theme.context";
+import ThemeContextProvider from "../context/theme.context";
+import darkTheme from "../styles/theme/dark";
+import lightTheme from "../styles/theme/light";
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -13,8 +14,8 @@ function MyApp({ Component, pageProps, }: AppProps) {
   return (
     <CacheProvider value={clientSideEmotionCache}>
       <ThemeContextProvider>
-        {(theme: Theme) => (
-          <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+        {(isDark: boolean) => (
+          <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
             <CssBaseline/>
             <Component {...pageProps} />
           </ThemeProvider>
