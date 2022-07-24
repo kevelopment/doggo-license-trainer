@@ -4,9 +4,11 @@ import { Choose } from "./content/choose";
 import { Training } from "./content/training";
 import { Mode } from "../types/mode";
 import { Exam } from "./content/exam";
+import { useScreenSize } from "../hooks/useScreenSize.hook";
 
 export const Content = () => {
   const { started, mode } = useTraining();
+  const {isMobile} = useScreenSize();
 
   let component = <Choose/>;
   if (started && mode === Mode.TRAINING) {
@@ -17,7 +19,7 @@ export const Content = () => {
   }
 
   return (
-    <Box p={4} mb={2}>
+    <Box p={isMobile ? 1: 4} mb={isMobile ? 6: 4}>
       {component}
     </Box>
   );

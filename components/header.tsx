@@ -12,6 +12,7 @@ import { useScreenSize } from "../hooks/useScreenSize.hook";
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
+import { Box } from "@mui/system";
 
 const Header = () => {
   const [openConfirmDialog, setOpenConfirmDialog] = useState<boolean>(false);
@@ -30,11 +31,13 @@ const Header = () => {
 
   const { m, s } = toTime(timeLeft);
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Dialog open={openConfirmDialog}>
         <DialogTitle>{`${mode === Mode.EXAM ? 'Prüfung' : 'Training'} wirklich abbrechen?`}</DialogTitle>
-        <Button variant={'outlined'} onClick={onConfirm} ><CheckIcon/>&nbsp;Ja</Button>
-        <Button variant={'outlined'} onClick={onCancel}><CloseIcon/>&nbsp;Nein</Button>
+        <Box p={2} display={'flex'} justifyContent={'space-between'} width={'100%'}>
+          <Button variant={'outlined'} onClick={onConfirm} fullWidth={false}><CheckIcon/>&nbsp;Ja</Button>
+          <Button variant={'outlined'} onClick={onCancel}><CloseIcon/>&nbsp;Nein</Button>
+        </Box>
       </Dialog>
       <Toolbar>
         <Grid container sx={{ display: 'flex', justifyContent: 'space-between' }}>

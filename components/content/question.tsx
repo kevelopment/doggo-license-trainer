@@ -44,7 +44,7 @@ export const Question = ({
                          }: QuestionProps) => {
   const [helperText, setHelperText] = useState<string>();
   const [selectedAnswer, setSelectedAnswer] = useState<number>();
-  const {isMobile} =useScreenSize();
+  const { isMobile } = useScreenSize();
 
   if (hidden) {
     return <></>;
@@ -91,7 +91,7 @@ export const Question = ({
       mountOnEnter
       unmountOnExit
     >
-      <Card sx={{p: isMobile ? 1 : 2}}>
+      <Card sx={{ p: isMobile ? 1 : 2 }}>
         <CardHeader
           title={`${index + 1}. ${question.question}`}
         ></CardHeader>
@@ -133,12 +133,13 @@ export const Question = ({
               </FormHelperText>
           }
         </CardContent>
-        <CardActions>
+        <CardActions sx={{ width: '100%', display: 'flex', justifyContent: 'space-between'}}>
           {hidePrevious ? null : (
             <Button
               color="primary"
               onClick={showPrevious}
               disabled={index === 0}
+              sx={{ float: 'left' }}
             >
               Zurück
             </Button>
@@ -147,6 +148,7 @@ export const Question = ({
             <Button
               color="primary"
               onClick={showNext}
+              sx={{ float: 'right' }}
             >
               Weiter
             </Button>
