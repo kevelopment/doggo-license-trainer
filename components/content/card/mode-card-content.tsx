@@ -20,9 +20,8 @@ export const ModeCardContent = ({ title, description, buttonText, onClick }: Mod
         {description}
       </Typography>
       <Box my={2}>
-
         <Button
-          color="secondary"
+          color="primary"
           variant="contained"
           onClick={onClick}
         >

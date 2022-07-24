@@ -46,7 +46,7 @@ const Header = () => {
               <IconButton onClick={() => setOpenConfirmDialog(true)} color="secondary">
                 <ArrowBackIosNewIcon/>
               </IconButton>
-              : <PetsIcon sx={{ mr: 1 }}/>
+              : <PetsIcon sx={{ mr: 2 }}/>
             }
             {!isMobile &&
                 <Typography

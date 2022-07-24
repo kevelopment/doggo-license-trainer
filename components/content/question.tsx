@@ -9,7 +9,8 @@ import {
   FormHelperText,
   Radio,
   RadioGroup,
-  Slide
+  Slide,
+  Typography
 } from "@mui/material";
 import type { Question as QuestionType } from "../../types/question";
 import { Box } from "@mui/system";
@@ -42,8 +43,8 @@ export const Question = ({
                            onNext,
                            onPrevious,
                          }: QuestionProps) => {
-  const [helperText, setHelperText] = useState<string>();
-  const [selectedAnswer, setSelectedAnswer] = useState<number>();
+  const [helperText, setHelperText] = useState<{ isValid: boolean, text: string } | null>(null);
+  const [selectedAnswer, setSelectedAnswer] = useState<number>(-1);
   const { isMobile } = useScreenSize();
 
   if (hidden) {
@@ -51,11 +52,11 @@ export const Question = ({
   }
 
   const handleChange = (_, value: string) => {
+    setHelperText(null);
     setSelectedAnswer(+value);
   };
 
   const showPrevious = () => {
-    setHelperText(undefined);
     onPrevious();
   };
 
@@ -64,23 +65,23 @@ export const Question = ({
     let isValid = true;
     if (selectedAnswer === -1) {
       isValid = false;
-      text = "Bitte wählen Sie eine Antwort aus.";
+      text = "Bitte wähle eine Antwort aus.";
     } else if (
       selectedAnswer !== question.correctAnswer
     ) {
       isValid = false;
-      text = "Leider falsch 😔";
+      text = "Leider nicht richtig  😔";
     }
 
     if (!isValid && showCorrectAnswer) {
-      text = `Correct answer: \n ${
+      text = `Richtige Antwort: \n ${
         question.answers[question.correctAnswer]
       }`;
     }
 
     // scroll to top when next question is shown
     window.scrollTo(0, 0);
-    setHelperText(text);
+    setHelperText({ isValid, text });
     onNext(isValid);
   };
 
@@ -92,9 +93,7 @@ export const Question = ({
       unmountOnExit
     >
       <Card sx={{ p: isMobile ? 1 : 2 }}>
-        <CardHeader
-          title={`${index + 1}. ${question.question}`}
-        ></CardHeader>
+        <CardHeader title={`${index + 1}. ${question.question}`} titleTypographyProps={{ variant: 'h6' }}/>
         <CardContent>
           {question.image && (
             <Box style={{ textAlign: "center" }}>
@@ -123,20 +122,24 @@ export const Question = ({
                   control={<Radio/>}
                   label={answer}
                   key={`answer-${index}`}
+                  sx={{ pb: isMobile ? 1 : 0 }}
                 />
               ))}
             </RadioGroup>
           </FormControl>
-          {helperText?.length &&
-              <FormHelperText variant={"outlined"} error>
-                {helperText}
+          {helperText &&
+              <FormHelperText error={!helperText.isValid} title={helperText.text} sx={{ textAlign: 'center', pt: 2 }}>
+                  <Typography>
+                    {helperText.text}
+                  </Typography>
               </FormHelperText>
           }
         </CardContent>
-        <CardActions sx={{ width: '100%', display: 'flex', justifyContent: 'space-between'}}>
+        <CardActions sx={{ width: '100%', display: 'flex', justifyContent: 'space-between' }}>
           {hidePrevious ? null : (
             <Button
               color="primary"
+              variant="outlined"
               onClick={showPrevious}
               disabled={index === 0}
               sx={{ float: 'left' }}
@@ -147,6 +150,7 @@ export const Question = ({
           {disableControls ? null : (
             <Button
               color="primary"
+              variant="outlined"
               onClick={showNext}
               sx={{ float: 'right' }}
             >
