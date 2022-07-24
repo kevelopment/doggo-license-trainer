@@ -14,7 +14,7 @@ import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
 import { Box } from "@mui/system";
 
-const Header = () => {
+const MenuBar = () => {
   const [openConfirmDialog, setOpenConfirmDialog] = useState<boolean>(false);
   const { questions, currentIndex, timeLeft, started, mode, reset } = useTraining();
   const { isDark, toggle } = useTheme();
@@ -82,4 +82,4 @@ const Header = () => {
   );
 }
 
-export default Header;
+export default MenuBar;

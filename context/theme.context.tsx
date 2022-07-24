@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext } from 'react';
 import { useDarkMode } from "usehooks-ts";
 
 export interface ThemeContextProps {
@@ -13,7 +13,7 @@ export type TrainingProvierProps = {
 };
 
 const ThemeContextProvider = ({ children }: TrainingProvierProps) => {
-  const {isDarkMode: isDark, toggle} = useDarkMode();
+  const { isDarkMode: isDark, toggle } = useDarkMode();
 
   const value = {
     isDark,
