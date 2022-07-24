@@ -1,28 +1,50 @@
-import { AppBar, Grid, IconButton, Toolbar, Typography } from "@mui/material";
+import { AppBar, Button, Dialog, DialogTitle, Grid, IconButton, Toolbar, Typography } from "@mui/material";
 import PetsIcon from '@mui/icons-material/Pets';
-import React from "react";
+import React, { useState } from "react";
 import HourglassEmptyIcon from '@mui/icons-material/HourglassEmpty';
 import { useTraining } from "../hooks/use-training.hook";
 import { useTheme } from "../hooks/use-theme.hook";
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import { useMediaQuery } from "usehooks-ts";
 import { toTime } from "../utils/time";
 import { Mode } from "../types/mode";
-
+import { useScreenSize } from "../hooks/useScreenSize.hook";
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import CheckIcon from '@mui/icons-material/Check';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Header = () => {
-  const { questions, currentIndex, timeLeft, started, mode } = useTraining();
+  const [openConfirmDialog, setOpenConfirmDialog] = useState<boolean>(false);
+  const { questions, currentIndex, timeLeft, started, mode, reset } = useTraining();
   const { isDark, toggle } = useTheme();
-  const isMobile = useMediaQuery('(max-width: 768px)');
+  const { isMobile } = useScreenSize();
+
+  const onCancel = () => {
+    setOpenConfirmDialog(false);
+  };
+
+  const onConfirm = () => {
+    setOpenConfirmDialog(false);
+    reset();
+  };
 
   const { m, s } = toTime(timeLeft);
   return (
     <AppBar position="static">
+      <Dialog open={openConfirmDialog}>
+        <DialogTitle>{`${mode === Mode.EXAM ? 'Prüfung' : 'Training'} wirklich abbrechen?`}</DialogTitle>
+        <Button variant={'outlined'} onClick={onConfirm} ><CheckIcon/>&nbsp;Ja</Button>
+        <Button variant={'outlined'} onClick={onCancel}><CloseIcon/>&nbsp;Nein</Button>
+      </Dialog>
       <Toolbar>
         <Grid container sx={{ display: 'flex', justifyContent: 'space-between' }}>
           <Grid item sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
-            <PetsIcon sx={{ mr: 1 }}/>
+            {started ?
+              <IconButton onClick={() => setOpenConfirmDialog(true)} color="secondary">
+                <ArrowBackIosNewIcon/>
+              </IconButton>
+              : <PetsIcon sx={{ mr: 1 }}/>
+            }
             {!isMobile &&
                 <Typography
                     variant="h6"

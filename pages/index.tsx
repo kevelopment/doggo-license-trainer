@@ -8,11 +8,11 @@ import { Content } from "../components/content";
 const Home: NextPage = () => {
   return (
     <div>
-      <Head>
-        <title>Hundeführerschein Trainer</title>
-        <meta name="description" content="Hundeführerschein Trainer Webapp"/>
-        <link rel="icon" href="favicon.ico"/>
-      </Head>
+      {/*<Head>*/}
+      {/*  <title>Hundeführerschein Trainer</title>*/}
+      {/*  <meta name="description" content="Hundeführerschein Trainer Webapp"/>*/}
+      {/*  <link rel="icon" href="favicon.ico"/>*/}
+      {/*</Head>*/}
 
       <TrainingProvider>
         <main>

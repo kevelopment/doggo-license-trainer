@@ -1,27 +1,43 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 html,
 body,
 #root {
-  height: 100%;
-  overflow-x: hidden;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 .no-selection {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+    html {
+        color-scheme: dark;
+    }
 }
 

@@ -15,6 +15,7 @@ import type { Question as QuestionType } from "../../types/question";
 import { Box } from "@mui/system";
 import { useState } from "react";
 import Image from "next/image";
+import { useScreenSize } from "../../hooks/useScreenSize.hook";
 
 
 export type Direction = 'left' | 'right' | 'up' | 'down';
@@ -43,6 +44,7 @@ export const Question = ({
                          }: QuestionProps) => {
   const [helperText, setHelperText] = useState<string>();
   const [selectedAnswer, setSelectedAnswer] = useState<number>();
+  const {isMobile} =useScreenSize();
 
   if (hidden) {
     return <></>;
@@ -89,7 +91,7 @@ export const Question = ({
       mountOnEnter
       unmountOnExit
     >
-      <Card>
+      <Card sx={{p: isMobile ? 1 : 2}}>
         <CardHeader
           title={`${index + 1}. ${question.question}`}
         ></CardHeader>

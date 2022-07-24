@@ -17,7 +17,7 @@ export const Content = () => {
   }
 
   return (
-    <Box p={4} mb={4}>
+    <Box p={4} mb={2}>
       {component}
     </Box>
   );

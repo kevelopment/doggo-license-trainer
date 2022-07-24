@@ -7,12 +7,14 @@ import { CssBaseline } from "@mui/material";
 import ThemeContextProvider from "../context/theme.context";
 import darkTheme from "../styles/theme/dark";
 import lightTheme from "../styles/theme/light";
+import { Seo } from "../components/seo";
 
 const clientSideEmotionCache = createEmotionCache();
 
 function MyApp({ Component, pageProps, }: AppProps) {
   return (
     <CacheProvider value={clientSideEmotionCache}>
+      <Seo/>
       <ThemeContextProvider>
         {(isDark: boolean) => (
           <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
