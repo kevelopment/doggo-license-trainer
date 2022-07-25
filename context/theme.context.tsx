@@ -11,6 +11,12 @@ export type TrainingProviderProps = {
   children: any | any[];
 };
 
+/**
+ * Provides the theme-mode (dark | light) for the application.
+ * Color theme is taken from: https://www.schemecolor.com/greek-god.php
+ * @param children
+ * @constructor
+ */
 const ThemeContextProvider = ({ children }: TrainingProviderProps) => {
   // need to set default false here, due to SSR
   const [isDark, setIsDark] = useState<boolean>(false);
